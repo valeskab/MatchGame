@@ -349,6 +349,7 @@ GameObject:
   - component: {fileID: 730199216}
   - component: {fileID: 730199215}
   - component: {fileID: 730199217}
+  - component: {fileID: 730199218}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -464,7 +465,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 990884430a2cf5642b1d97d6098a2ea3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idObj: {fileID: 11400000, guid: d636ac751802a82468cd4a2c426acc8b, type: 2}
+  idObj: {fileID: 11400000, guid: f12a6eaa90e37c94a855d70e94a6c5e8, type: 2}
+--- !u!114 &730199218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 730199211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b9a779c616ebce4e98178cce2fedbf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1100791701
 GameObject:
   m_ObjectHideFlags: 0
@@ -564,7 +577,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c52abe29755d7749a10bd4243380f91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idObj: {fileID: 11400000, guid: d636ac751802a82468cd4a2c426acc8b, type: 2}
+  idObj: {fileID: 11400000, guid: f12a6eaa90e37c94a855d70e94a6c5e8, type: 2}
   matchEvent:
     m_PersistentCalls:
       m_Calls:
@@ -752,4 +765,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 990884430a2cf5642b1d97d6098a2ea3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idObj: {fileID: 11400000, guid: f12a6eaa90e37c94a855d70e94a6c5e8, type: 2}
+  idObj: {fileID: 0}
