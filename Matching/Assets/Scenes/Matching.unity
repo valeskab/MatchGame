@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 223552693}
   - component: {fileID: 223552692}
   - component: {fileID: 223552691}
+  - component: {fileID: 223552695}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -238,6 +239,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &223552695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223552690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 990884430a2cf5642b1d97d6098a2ea3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idObj: {fileID: 11400000, guid: 5ebe63ad3828ac543bd1c486f9e27385, type: 2}
 --- !u!1 &604381857
 GameObject:
   m_ObjectHideFlags: 0
@@ -402,7 +416,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 730199211}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.3, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -450,7 +464,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 990884430a2cf5642b1d97d6098a2ea3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idObj: {fileID: 11400000, guid: f12a6eaa90e37c94a855d70e94a6c5e8, type: 2}
+  idObj: {fileID: 11400000, guid: d636ac751802a82468cd4a2c426acc8b, type: 2}
 --- !u!1 &1100791701
 GameObject:
   m_ObjectHideFlags: 0
@@ -550,13 +564,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c52abe29755d7749a10bd4243380f91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idObj: {fileID: 11400000, guid: f12a6eaa90e37c94a855d70e94a6c5e8, type: 2}
+  idObj: {fileID: 11400000, guid: d636ac751802a82468cd4a2c426acc8b, type: 2}
   matchEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 3dc92281e07606c4297590a7a083fae2, type: 2}
+        m_TargetAssemblyTypeName: MyIntData, Assembly-CSharp
+        m_MethodName: UpdateValue
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 10
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   noMatchEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 3dc92281e07606c4297590a7a083fae2, type: 2}
+        m_TargetAssemblyTypeName: MyIntData, Assembly-CSharp
+        m_MethodName: UpdateValue
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: -10
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!54 &1100791705
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -598,6 +636,7 @@ GameObject:
   - component: {fileID: 1392663887}
   - component: {fileID: 1392663886}
   - component: {fileID: 1392663885}
+  - component: {fileID: 1392663889}
   m_Layer: 0
   m_Name: Isometric Diamond
   m_TagString: Untagged
@@ -701,3 +740,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1392663889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1392663884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 990884430a2cf5642b1d97d6098a2ea3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idObj: {fileID: 11400000, guid: f12a6eaa90e37c94a855d70e94a6c5e8, type: 2}

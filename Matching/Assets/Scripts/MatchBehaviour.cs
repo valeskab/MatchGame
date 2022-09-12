@@ -16,7 +16,7 @@ public class MatchBehaviour : MonoBehaviour
         {
             matchEvent.Invoke();
         }
-
+        else
         {
             noMatchEvent.Invoke();
         }

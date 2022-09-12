@@ -1,18 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class MyIntData : MonoBehaviour
+[CreateAssetMenu]
+public class MyIntData : ScriptableObject
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public int value;
 
-    // Update is called once per frame
-    void Update()
+    public void UpdateValue(int num)
     {
-        
+        value += num;
     }
 }
