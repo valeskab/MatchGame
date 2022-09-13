@@ -1,18 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(SpriteRenderer))]
 public class SpriteBehaviour : MonoBehaviour
 {
     private SpriteRenderer rendererObj;
-    void Start()
+    private void Start()
     {
         rendererObj = GetComponent<SpriteRenderer>();
     }
 
-    public void ChangeRenderColor(Color color)
+    public void ChangeRendererColor(ColorID obj)
     {
-        rendererObj.color = color;
+        rendererObj.color = obj.value;
     }
 }

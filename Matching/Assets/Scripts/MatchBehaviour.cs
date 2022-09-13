@@ -1,9 +1,8 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-public class MatchBehaviour : MonoBehaviour
+public class MatchBehaviour : IDContainerBehaviour
 {
-    public ID idObj;
     public UnityEvent matchEvent, noMatchEvent;
     private void OnTriggerEnter(Collider other)
     {
