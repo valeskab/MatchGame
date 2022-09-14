@@ -509,7 +509,9 @@ GameObject:
   - component: {fileID: 1100791706}
   - component: {fileID: 1100791705}
   - component: {fileID: 1100791704}
+  - component: {fileID: 1100791708}
   - component: {fileID: 1100791707}
+  - component: {fileID: 1100791709}
   m_Layer: 0
   m_Name: Circle
   m_TagString: Untagged
@@ -597,6 +599,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idObj: {fileID: 11400000, guid: f12a6eaa90e37c94a855d70e94a6c5e8, type: 2}
+  startEvent:
+    m_PersistentCalls:
+      m_Calls: []
   matchEvent:
     m_PersistentCalls:
       m_Calls:
@@ -680,6 +685,47 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b9a779c616ebce4e98178cce2fedbf2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1100791708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1100791701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7130a4c3246bca4ab58a0e45fb3df12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  draggable: 1
+  position: {x: 0, y: 0, z: 0}
+  offset: {x: 0, y: 0, z: 0}
+  startDragEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  endDragEvent:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!95 &1100791709
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1100791701}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 58c3828a3fdae244bbb20bdedf71a540, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1392663884
 GameObject:
   m_ObjectHideFlags: 0
