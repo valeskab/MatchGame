@@ -1,14 +1,15 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 
 public class MatchBehaviour : IDContainerBehaviour
 {
-    public UnityEvent matchEvent, noMatchEvent;
-    private void OnTriggerEnter(Collider other)
+    public UnityEvent matchEvent, noMatchEvent, noMatchDelayedEvent;
+    private IEnumerator OnTriggerEnter(Collider other)
     {
         var tempObj = other.GetComponent<IDContainerBehaviour>();
         if (tempObj == null)
-            return;   // If the object is Null (if theres not an object there) its going to return meaning it's not gonna run the code below
+            yield break;
             
         var otherID = tempObj.idObj;
         if (otherID == idObj)
@@ -18,6 +19,8 @@ public class MatchBehaviour : IDContainerBehaviour
         else
         {
             noMatchEvent.Invoke();
+            yield return new WaitForSeconds(0.5f);
+            noMatchDelayedEvent.Invoke();
         }
     }
 }
