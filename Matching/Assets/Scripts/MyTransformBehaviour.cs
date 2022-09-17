@@ -1,7 +1,6 @@
-using System;
 using UnityEngine;
 
-public class TransformComponent : MonoBehaviour
+public class MyTransformBehaviour : MonoBehaviour
 {
     public void ResetToZero()
     {
