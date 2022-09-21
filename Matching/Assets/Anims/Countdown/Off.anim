@@ -33,7 +33,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_Color.r
-    path: Text (Legacy)
+    path: Go! Label
     classID: 114
     script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   - curve:
@@ -52,7 +52,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_Color.g
-    path: Text (Legacy)
+    path: Go! Label
     classID: 114
     script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   - curve:
@@ -71,7 +71,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_Color.b
-    path: Text (Legacy)
+    path: Go! Label
     classID: 114
     script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   - curve:
@@ -90,7 +90,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_Color.a
-    path: Text (Legacy)
+    path: Go! Label
     classID: 114
     script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_PPtrCurves: []
@@ -102,28 +102,28 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 3763599388
+      path: 840136600
       attribute: 2526845255
       script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
       typeID: 114
       customType: 0
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 3763599388
+      path: 840136600
       attribute: 4215373228
       script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
       typeID: 114
       customType: 0
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 3763599388
+      path: 840136600
       attribute: 2334886179
       script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
       typeID: 114
       customType: 0
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 3763599388
+      path: 840136600
       attribute: 304273561
       script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
       typeID: 114
@@ -167,7 +167,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_Color.r
-    path: Text (Legacy)
+    path: Go! Label
     classID: 114
     script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   - curve:
@@ -186,7 +186,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_Color.g
-    path: Text (Legacy)
+    path: Go! Label
     classID: 114
     script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   - curve:
@@ -205,7 +205,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_Color.b
-    path: Text (Legacy)
+    path: Go! Label
     classID: 114
     script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   - curve:
@@ -224,7 +224,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_Color.a
-    path: Text (Legacy)
+    path: Go! Label
     classID: 114
     script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_EulerEditorCurves: []
