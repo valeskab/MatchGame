@@ -388,6 +388,7 @@ GameObject:
   - component: {fileID: 103615526}
   - component: {fileID: 103615525}
   - component: {fileID: 103615524}
+  - component: {fileID: 103615527}
   m_Layer: 5
   m_Name: HighScoreNum
   m_TagString: Untagged
@@ -496,6 +497,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 103615522}
   m_CullTransparentMesh: 1
+--- !u!114 &103615527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 103615522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 191bd8b2becb11a428092e013b1ca354, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameActionObj: {fileID: 11400000, guid: 188fc7c7a1ce63049a95eefbe66674de, type: 2}
+  onRaiseEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 103615524}
+        m_TargetAssemblyTypeName: TextLabelBehaviour, Assembly-CSharp
+        m_MethodName: UpdateLabel
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 4f9f5352c76c70146b0dc900c8e64e5e, type: 2}
+          m_ObjectArgumentAssemblyTypeName: MyIntData, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &237080756
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -503,45 +532,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5506281191414441841, guid: 967a4c30f0d44814db91256f57147781, type: 3}
-      propertyPath: startEvent.m_PersistentCalls.m_Calls.Array.size
+    - target: {fileID: 1560866421, guid: 967a4c30f0d44814db91256f57147781, type: 3}
+      propertyPath: m_Enabled
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5506281191414441841, guid: 967a4c30f0d44814db91256f57147781, type: 3}
-      propertyPath: startCountEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5506281191414441841, guid: 967a4c30f0d44814db91256f57147781, type: 3}
-      propertyPath: startEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1532978042}
-    - target: {fileID: 5506281191414441841, guid: 967a4c30f0d44814db91256f57147781, type: 3}
-      propertyPath: startCountEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5506281191414441841, guid: 967a4c30f0d44814db91256f57147781, type: 3}
-      propertyPath: startEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: StartRepeatUntilFalse
-      objectReference: {fileID: 0}
-    - target: {fileID: 5506281191414441841, guid: 967a4c30f0d44814db91256f57147781, type: 3}
-      propertyPath: startCountEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5506281191414441841, guid: 967a4c30f0d44814db91256f57147781, type: 3}
-      propertyPath: repeatUntilFalseEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 11400000, guid: 96c764ae95c15584abc8c87b1e5292c5, type: 2}
-    - target: {fileID: 5506281191414441841, guid: 967a4c30f0d44814db91256f57147781, type: 3}
-      propertyPath: repeatUntilFalseEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: CreateInstanceListRandomly
-      objectReference: {fileID: 0}
-    - target: {fileID: 5506281191414441841, guid: 967a4c30f0d44814db91256f57147781, type: 3}
-      propertyPath: startEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: CoroutineBehaviour, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 5506281191414441841, guid: 967a4c30f0d44814db91256f57147781, type: 3}
-      propertyPath: startEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 5506281191414441846, guid: 967a4c30f0d44814db91256f57147781, type: 3}
       propertyPath: m_RootOrder
@@ -2217,19 +2210,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1100791713}
-        m_TargetAssemblyTypeName: MyTransformBehaviour, Assembly-CSharp
-        m_MethodName: ResetToZero
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1100791702}
+      - m_Target: {fileID: 2733968482450551135, guid: c25e3df2c2e7bef4fb341b02407fc76d, type: 3}
         m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
@@ -2260,18 +2241,6 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 11400000, guid: 3dc92281e07606c4297590a7a083fae2, type: 2}
           m_ObjectArgumentAssemblyTypeName: MyIntData, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1100791707}
-        m_TargetAssemblyTypeName: SpriteBehaviour, Assembly-CSharp
-        m_MethodName: ChangeRendererColor
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 6864bf91e8682c5489410c20ff69fa8e, type: 2}
-          m_ObjectArgumentAssemblyTypeName: ColorID, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2435,63 +2404,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1001 &1268688488
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4403777773935085977, guid: c25e3df2c2e7bef4fb341b02407fc76d, type: 3}
-      propertyPath: m_RootOrder
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 4403777773935085977, guid: c25e3df2c2e7bef4fb341b02407fc76d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4403777773935085977, guid: c25e3df2c2e7bef4fb341b02407fc76d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4403777773935085977, guid: c25e3df2c2e7bef4fb341b02407fc76d, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4403777773935085977, guid: c25e3df2c2e7bef4fb341b02407fc76d, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4403777773935085977, guid: c25e3df2c2e7bef4fb341b02407fc76d, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4403777773935085977, guid: c25e3df2c2e7bef4fb341b02407fc76d, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4403777773935085977, guid: c25e3df2c2e7bef4fb341b02407fc76d, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4403777773935085977, guid: c25e3df2c2e7bef4fb341b02407fc76d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4403777773935085977, guid: c25e3df2c2e7bef4fb341b02407fc76d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4403777773935085977, guid: c25e3df2c2e7bef4fb341b02407fc76d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7690542184254309283, guid: c25e3df2c2e7bef4fb341b02407fc76d, type: 3}
-      propertyPath: m_Name
-      value: Dot
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: c25e3df2c2e7bef4fb341b02407fc76d, type: 3}
 --- !u!1 &1331317718
 GameObject:
   m_ObjectHideFlags: 0
@@ -2504,6 +2416,7 @@ GameObject:
   - component: {fileID: 1331317721}
   - component: {fileID: 1331317720}
   - component: {fileID: 1331317722}
+  - component: {fileID: 1331317723}
   m_Layer: 5
   m_Name: ScoreNum
   m_TagString: Untagged
@@ -2586,6 +2499,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1331317722}
+        m_TargetAssemblyTypeName: TextLabelBehaviour, Assembly-CSharp
+        m_MethodName: UpdateLabel
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 3dc92281e07606c4297590a7a083fae2, type: 2}
+          m_ObjectArgumentAssemblyTypeName: MyIntData, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1331317723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1331317718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 191bd8b2becb11a428092e013b1ca354, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameActionObj: {fileID: 11400000, guid: 188fc7c7a1ce63049a95eefbe66674de, type: 2}
+  onRaiseEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1331317722}
@@ -2974,6 +2915,7 @@ GameObject:
   - component: {fileID: 2024759810}
   - component: {fileID: 2024759809}
   - component: {fileID: 2024759808}
+  - component: {fileID: 2024759813}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -3089,3 +3031,31 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &2024759813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2024759807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 191bd8b2becb11a428092e013b1ca354, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameActionObj: {fileID: 11400000, guid: e27db8084e585de48b40b23176dd1802, type: 2}
+  onRaiseEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2024759808}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Replay
+          m_BoolArgument: 0
+        m_CallState: 2
