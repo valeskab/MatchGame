@@ -534,11 +534,43 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1560866421, guid: 967a4c30f0d44814db91256f57147781, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1560866421, guid: 967a4c30f0d44814db91256f57147781, type: 3}
+      propertyPath: gameActionObj
+      value: 
+      objectReference: {fileID: 11400000, guid: e27db8084e585de48b40b23176dd1802, type: 2}
+    - target: {fileID: 1560866421, guid: 967a4c30f0d44814db91256f57147781, type: 3}
+      propertyPath: onRaiseEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1560866421, guid: 967a4c30f0d44814db91256f57147781, type: 3}
+      propertyPath: onRaiseEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1560866421, guid: 967a4c30f0d44814db91256f57147781, type: 3}
+      propertyPath: onRaiseEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1532978042}
+    - target: {fileID: 1560866421, guid: 967a4c30f0d44814db91256f57147781, type: 3}
+      propertyPath: onRaiseEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1560866421, guid: 967a4c30f0d44814db91256f57147781, type: 3}
+      propertyPath: onRaiseEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: set_CanRun
+      objectReference: {fileID: 0}
+    - target: {fileID: 1560866421, guid: 967a4c30f0d44814db91256f57147781, type: 3}
+      propertyPath: onRaiseEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CoroutineBehaviour, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1560866421, guid: 967a4c30f0d44814db91256f57147781, type: 3}
+      propertyPath: onRaiseEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 5506281191414441846, guid: 967a4c30f0d44814db91256f57147781, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5506281191414441846, guid: 967a4c30f0d44814db91256f57147781, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1199,7 +1231,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1015756946
 GameObject:
@@ -2734,7 +2766,7 @@ RectTransform:
   m_Children:
   - {fileID: 46295368}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
