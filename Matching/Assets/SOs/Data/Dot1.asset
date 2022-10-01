@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a981886c77c95dd4085f4b204768d471, type: 3}
   m_Name: Dot1
   m_EditorClassIdentifier: 
-  value: {x: 0, y: -3, z: 0}
+  value: {x: -1.5, y: -3, z: 0}
